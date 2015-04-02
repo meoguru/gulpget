@@ -1,6 +1,6 @@
 # gulpget
 
-Pre-defined [Gulp][https://www.npmjs.com/package/gulp] tasks.
+Pre-defined [Gulp](https://www.npmjs.com/package/gulp) tasks.
 
 ## Installation
 
