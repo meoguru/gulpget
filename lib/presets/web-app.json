@@ -1,0 +1,33 @@
+{
+  "server": "lib/server.js",
+  "clean": {
+    "files": []
+  },
+  "lint": {
+    "files": [
+      "{app,bin,lib,test}/**/*.js",
+      "gulpfile.js"
+    ]
+  },
+  "test": {
+    "setup": [
+      "test/setup.js"
+    ],
+    "source": [
+      "{app,bin,lib}/**/*.js",
+      "!{app,bin,lib}/**/__test__/**/*"
+    ],
+    "tests": [
+      "{app,bin,lib}/**/__test__/**/*.spec.js"
+    ],
+    "slowTests": [
+      "test/**/*.spec.js"
+    ]
+  },
+  "serve": {
+    "clearCache": [
+      "app/**/*",
+      "lib/**/*"
+    ]
+  }
+}

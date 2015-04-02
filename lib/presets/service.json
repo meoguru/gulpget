@@ -1,0 +1,23 @@
+{
+  "lint": {
+    "files": [
+      "{bin,lib,test}/**/*.js",
+      "gulpfile.js"
+    ]
+  },
+  "test": {
+    "setup": [
+      "test/setup.js"
+    ],
+    "source": [
+      "{bin,lib}/**/*.js",
+      "!{bin,lib}/**/__test__/**/*"
+    ],
+    "tests": [
+      "{bin,lib}/**/__test__/**/*.spec.js"
+    ],
+    "slowTests": [
+      "test/**/*.spec.js"
+    ]
+  }
+}
